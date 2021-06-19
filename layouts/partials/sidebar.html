@@ -49,5 +49,10 @@
                 </li>
             </ul>
         </nav>
+		{{ if .Site.Params.sidebarLinks }}
+		<div id="sidebarLinks">
+		    {{ range .Site.Params.sidebarLinks}}<a class="" href='{{ . | urlize | absURL }}'>{{ . }}</a>{{ end }}
+		</div>	
+        {{ end }}
     </div>
 </div>
