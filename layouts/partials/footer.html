@@ -6,3 +6,17 @@
     </div>
 </div>
 <script src='{{ "js/all.min.js" | absURL }}'></script>
+<!-- jPlayer Jukebox add-on 0.6.7 -->
+<link type="text/css" href="//gyrocode.github.io/jplayer-jukebox/0.6.7/skin/uno/jplayer.uno.min.css" rel="stylesheet" />
+<script type="text/javascript" src="//gyrocode.github.io/jplayer-jukebox/0.6.7/jplayer.jukebox.bundle.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// Initialize jPlayerJukebox
+		var jpjb = new jPlayerJukebox({
+			'jukeboxOptions': {
+			'position': 'float-bl',
+			'className': 'ui-dark ui-flat'
+			}
+		});
+	});
+</script>
