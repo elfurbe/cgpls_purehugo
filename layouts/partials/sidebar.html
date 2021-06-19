@@ -35,6 +35,13 @@
                     </a>
                 </li>
                 {{ end }}
+                {{ if .Site.Params.email}}
+                <li class="nav-item">
+                    <a class="pure-button" href="mailto:{{ .Site.Params.email }}">
+                        <i class="fa fa-at"></i>{{ if not .Site.Params.hideSidebarIconText }} Email{{ end }}
+                    </a>
+                </li>
+                {{ end }}
                 <li class="nav-item">
                     <a class="pure-button" href='{{ "index.xml" | absURL }}'>
                         <i class="fa fa-rss"></i>{{ if not .Site.Params.hideSidebarIconText }} rss{{ end }}
