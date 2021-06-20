@@ -76,3 +76,36 @@ div.post-description {
 .pure-u-md-3-4, .pure-u-md-18-24 {
     max-width: 775px;
 }
+
+div#sidebarLinks {
+    padding-top: 15px;
+}
+
+div#sidebarLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+div#sidebarLinks a:hover {
+    color: #5391c4;
+}
+
+div.footer {
+    color: lightgray;
+}
+
+div.footer a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+div.footer a:hover {
+    color: gray;
+}
+
+div#disclaimer {
+    font-size: .7em;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}

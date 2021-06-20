@@ -1,8 +1,14 @@
 <div class="footer">
-    <div class="pure-menu pure-menu-horizontal pure-menu-open">
-        <ul>
-            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
-        </ul>
+    <div>
+        {{ if .Site.Params.copyright }}
+        <div id=copyright>© {{ now.Format "2006"}} {{ .Site.Params.copyright }}</div>
+        {{ end }}
+        {{ if .Site.Params.disclaimer }}
+        <div id="disclaimer">
+            {{ .Site.Params.disclaimer }}
+        </div>
+        {{ end }}
+        <div>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></div>
     </div>
 </div>
 <script src='{{ "js/all.min.js" | absURL }}'></script>
