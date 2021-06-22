@@ -111,7 +111,19 @@ div#disclaimer {
 }
 
 img.author-img {
-    width: 50%;
+    width: 25%;
     border-radius: 50%;
     margin: auto;
+}
+
+div[class^="author-"] {
+    width: 100%;
+    text-align: center;
+}
+
+div.author-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
 }
