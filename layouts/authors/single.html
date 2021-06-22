@@ -13,7 +13,7 @@
                         <img src="{{ $.Page.Params.image }}" alt="{{ $.Page.Params.lug }}" class="pure-img author-img" />
                         <div class="author-name" style="margin:auto; text-size:">{{ $.Page.Params.name}}</div>
                         <div class="author-location">{{ $.Page.Params.location }}</div>
-                        <div class="author-twitter">{{ $.Page.Params.twitter}}</div>
+                        <div class="author-twitter"><a href="https://twitter.com/{{ $.Page.Params.twitter}}">{{ $.Page.Params.twitter}}</a></div>
                         {{ .Content }}
                     </div>
                 </section>
