@@ -19,11 +19,10 @@
                         {{ .Content }}
                     </div>
                     <div class="posts">
-                        <ul>
+                        <h1>Posts</h1>
                         {{ range (where .Pages ".Type" "posts" ) }}
-                            <li><a href="{{ .RelPermalink }}">{{ .Title | truncate 50 }}</a></li>
+                          {{ .Render "summ" }}    
                         {{ end }}
-                        </ul>
                     </div>
                 </section>
             </div>
