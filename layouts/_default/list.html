@@ -7,7 +7,7 @@
         <div>
             <!-- A wrapper for all the blog posts -->
             <div class="posts">
-                {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+                {{ $paginator := .Paginate (where .Pages "Type" "in" site.Params.mainSections) }}
                 {{ range $paginator.Pages }}
                 <h1 class="content-subhead">{{ dateFormat "02 Jan 2006, 15:04 MST" .Date.Local }}</h1>
                 <section class="post">
@@ -17,13 +17,11 @@
 
                         <p class="post-meta">
                             {{ with .Params.author }}
-                                By <strong class="post-author"><a href="/authors/{{ . | urlize }}">{{ . }}</a></strong>
+                            By <strong class="post-author"><a href="/author/{{ . | urlize }}">{{ . }}</a></strong>
                             {{ end }}
                             {{ if isset .Params "categories" }}
                                 under 
-                                {{ range .Params.categories }}
-                                    <a class="post-category post-category-{{ . }}" href='{{ ( printf "categories/%s" . ) | urlize | absURL }}'>{{ . }}</a>
-                                {{ end }}
+                                {{ range .Params.categories }}<a class="post-category post-category-{{ . }}" href='{{ ( printf "categories/%s" . ) | urlize | absURL }}'>{{ . }}</a>{{ end }}
                             {{ end }}
                         </p>
                     </header>

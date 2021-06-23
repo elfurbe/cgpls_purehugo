@@ -17,7 +17,7 @@
 
                         <p class="post-meta">
                             {{ with .Params.author }}
-                            By <strong class="post-author"><a href="/authors/{{ . | urlize }}">{{ . }}</a></strong>
+                            By <strong class="post-author"><a href="/author/{{ . | urlize }}">{{ . }}</a></strong>
                             {{ end }}
                             {{ if isset .Params "categories" }}
                                 under 
