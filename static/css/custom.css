@@ -150,6 +150,45 @@ div.category-title {
     padding-bottom: .25em;
     margin-bottom: .25em;
     border-bottom: 2px solid black;
-
 }
 
+div.pagination {
+    width: 100%;
+}
+
+div.pagination ul.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.pagination li.page-item {
+    width: 3em;
+}
+
+div.pagination li.page-item a {
+    display: block;
+    text-align: center;
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+    width: 100%;
+    font-size: 1.5em;
+}
+
+div.pagination li.page-item a:hover {
+    font-size: 1.75em;
+    text-decoration: none;
+}
+
+div.pagination li.disabled {
+    display: none;
+}
+
+div.pagination li.active a {
+    font-weight: bold;
+    font-size: 1.75em;
+}
