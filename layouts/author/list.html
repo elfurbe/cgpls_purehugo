@@ -18,8 +18,8 @@
                         <div class="author-twitter"><a href="https://twitter.com/{{ .Params.twitter }}">{{ .Params.twitter }}</a></div>
                         {{ .Content }}
                     </div>
+                    <hr />
                     <div class="posts">
-                        <h1>Posts</h1>
                         {{ range (where .Pages ".Type" "posts" ) }}
                           {{ .Render "summ" }}    
                         {{ end }}
