@@ -139,3 +139,17 @@ div.author-name {
     padding: 10px;
     padding-top: 20px;
 }
+
+div.category-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .25em;
+    margin-bottom: .25em;
+    border-bottom: 2px solid black;
+
+}
+
