@@ -173,15 +173,15 @@ div.pagination li.page-item {
 div.pagination li.page-item a {
     display: block;
     text-align: center;
-    /*padding-left: 10px;
-    padding-right: 10px;*/
     width: 100%;
     font-size: 1.5em;
+    color: lightgray;
 }
 
 div.pagination li.page-item a:hover {
     font-size: 1.75em;
     text-decoration: none;
+    color: gray;
 }
 
 div.pagination li.disabled {
@@ -191,4 +191,5 @@ div.pagination li.disabled {
 div.pagination li.active a {
     font-weight: bold;
     font-size: 1.75em;
+    color: gray;
 }
