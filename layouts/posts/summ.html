@@ -1,7 +1,7 @@
 <article class="post">
   <header>
-    <div >{{ .Title }}</div>
-    <div class="post-meta">{{ dateFormat "02 Jan 2006, 15:04 MST" .Date.Local }} - {{ .FuzzyWordCount }} Words </div>
+    <div><a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a></div>
+    <div class="post-meta">{{ dateFormat "02 Jan 2006, 15:04 MST" .Date.Local }} - {{ .WordCount }} Words ({{ .ReadingTime }} minutes) </div>
   </header>
   {{ .Summary }}
   <footer>
