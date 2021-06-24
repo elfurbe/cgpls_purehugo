@@ -37,19 +37,23 @@ div.store-link {
 }
 
 div.amzn-link {
-    background-image: url(/content/images/amzn-c.png);
+    background-image: url(/images/amazon.png);
 }
 
 div.appl-link {
-    background-image: url(/content/images/appl-t.png);
+    background-image: url(/images/apple.png);
 }
 
 div.spotify-link {
-    background-image: url(/content/images/spotify-t.png);
+    background-image: url(/images/spotify.png);
 }
 
 div.bandcamp-link {
-    background-image: url(/content/images/bandcamp.png);
+    background-image: url(/images/bandcamp.png);
+}
+
+div.vinyl-link {
+    background-image: url(/images/vinyl.png);
 }
 
 div.store-link a {
