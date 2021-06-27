@@ -1,0 +1,25 @@
+{{ with $.Page.Params.vinyl }}
+<div class="store-link vinyl-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
+{{ with $.Page.Params.bandcamp }}
+<div class="store-link bandcamp-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
+{{ with $.Page.Params.amzn }}
+<div class="store-link amzn-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
+{{ with $.Page.Params.appl }}
+<div class="store-link appl-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
+{{ with $.Page.Params.spotify }}
+<div class="store-link spotify-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
