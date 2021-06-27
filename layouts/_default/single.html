@@ -43,6 +43,10 @@
                     <div class="post-description">
                         <img src="{{ $.Page.Params.image }}" alt="{{ $.Page.Params.lug }}" class="pure-img" >
                         {{ .Content }}
+
+                        {{ if isset $.Page.Params "songs" }}
+                        {{ partial "contentfooter.html" . }}
+                        {{ end }}
                     </div>
                     {{ template "_internal/disqus.html" . }}
                 </section>

@@ -29,6 +29,10 @@
                     <div class="post-description">
                         <img src="{{ .Params.image }}" alt="{{ .Params.lug }}" class="pure-img" >
                         {{ .Content }}
+
+                        {{ if isset .Params "songs" }}
+                        {{ partial "contentfooter.html" . }}
+                        {{ end }}
                     </div>
                 </section>
                 {{ end }}
