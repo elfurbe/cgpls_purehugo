@@ -1,0 +1,33 @@
+{{ range $.Page.Params.songs }}
+<a href="/media/{{ $.Page.Params.slug }}/{{ . }}" title="{{ $.Page.Params.title }}: {{ replaceRE "^[0-9]{2} ?- ?(.*).mp3$" "$1" . }}" >{{ replaceRE "^[0-9]{2} ?- ?(.*).mp3$" "$1" . }}</a><br />
+{{ end }}
+<br />
+Where to find {{ $.Page.Params.title }}:<br />
+Twitter: <a href="https://twitter.com/{{ $.Page.Params.twit }}" title="@{{ $.Page.Params.twit }}">@{{ $.Page.Params.twit }}</a><br />
+Website: <a href="{{ $.Page.Params.web }}" >{{ replaceRE "^.*//(.*)$" "$1" $.Page.Params.web }}</a>
+<br /><br />
+{{ with $.Page.Params.vinyl }}
+<div class="store-link vinyl-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
+{{ with $.Page.Params.bandcamp }}
+<div class="store-link bandcamp-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
+{{ with $.Page.Params.amzn }}
+<div class="store-link amzn-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
+{{ with $.Page.Params.appl }}
+<div class="store-link appl-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
+{{ with $.Page.Params.spotify }}
+<div class="store-link spotify-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}
