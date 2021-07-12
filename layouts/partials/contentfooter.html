@@ -31,3 +31,8 @@ Website: <a href="{{ $.Page.Params.web }}" >{{ replaceRE "^.*//(.*)$" "$1" $.Pag
     <a href="{{ . }} "></a>
 </div>
 {{end}}
+{{ with $.Page.Params.tidal }}
+<div class="store-link tidal-link">
+    <a href="{{ . }} "></a>
+</div>
+{{end}}

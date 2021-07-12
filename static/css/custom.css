@@ -27,6 +27,10 @@ img.bandcamp-link {
     width: 32px;
 }
 
+img.tidal-link {
+    width: 32px;
+}
+
 div.store-link {
     position: relative;
     background-size: contain;
@@ -54,6 +58,10 @@ div.bandcamp-link {
 
 div.vinyl-link {
     background-image: url(/images/vinyl.png);
+}
+
+div.tidal-link {
+    background-image: url(/images/tidal.png);
 }
 
 div.store-link a {
