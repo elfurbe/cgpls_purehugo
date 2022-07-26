@@ -8,10 +8,7 @@
     <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
 
     {{hugo.Generator}}
-    <meta name="twitter:card" content="summary">
-    {{ with .Site.Params.twitter }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
-    <meta name="twitter:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
-    <meta name="twitter:description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
+    {{ partial "twitter" . }}
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
