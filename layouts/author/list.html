@@ -15,7 +15,8 @@
                         </div>
                         <div class="author-name" style="margin:auto; text-size:">{{ .Params.name}}</div>
                         <div class="author-location">{{ .Params.location }}</div>
-                        <div class="author-twitter"><a href="https://twitter.com/{{ .Params.twitter }}">{{ .Params.twitter }}</a></div>
+                        <!--<div class="author-twitter"><a href="https://twitter.com/{{ .Params.twitter }}">{{ .Params.twitter }}</a></div>-->
+                        <div class="author-mastodon"><a href="{{ .Params.mastodonURL }}">{{ .Params.mastodon }}</a></div>
                         {{ .Content }}
                     </div>
                     <hr />
