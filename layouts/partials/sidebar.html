@@ -7,6 +7,13 @@
 
         <nav class="nav">
             <ul class="nav-list">
+                {{ if .Site.Params.mastodonURL }}
+                <li class="nav-item">
+                    <a class="pure-button" href="{{ .Site.Params.mastodonURL}}">
+                        <i class="fa-brands fa-mastodonr"></i>{{ if not .Site.Params.hideSidebarIconText }} Mastodon{{ end }}
+                    </a>
+                </li>
+                {{ end }}
                 {{ if .Site.Params.twitterName }}
                 <li class="nav-item">
                     <a class="pure-button" href="https://twitter.com/{{ .Site.Params.twitterName }}">
